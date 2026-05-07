@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gurain Singh | Premium Website</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#0f0f0f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+      background:rgba(0,0,0,0.5);
+      backdrop-filter:blur(10px);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#00f7ff;
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      display:flex;
+      gap:30px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    nav ul li a:hover{
+      color:#00f7ff;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:0 10%;
+      background:
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero-content h1{
+      font-size:70px;
+      margin-bottom:15px;
+      text-transform:uppercase;
+    }
+
+    .hero-content span{
+      color:#00f7ff;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      max-width:700px;
+      margin:auto;
+      color:#ddd;
+      line-height:1.8;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:35px;
+      padding:15px 40px;
+      border-radius:50px;
+      background:#00f7ff;
+      color:black;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.4s;
+      box-shadow:0 0 20px #00f7ff;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px) scale(1.05);
+      box-shadow:0 0 40px #00f7ff;
+    }
+
+    /* SECTION */
+
+    section{
+      padding:100px 8%;
+    }
+
+    .title{
+      text-align:center;
+      font-size:45px;
+      margin-bottom:60px;
+      color:#00f7ff;
+    }
+
+    /* CARDS */
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#1a1a1a;
+      padding:35px;
+      border-radius:20px;
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 30px rgba(0,247,255,0.4);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#00f7ff;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#ccc;
+      line-height:1.7;
+    }
+
+    /* ABOUT */
+
+    .about{
+      display:flex;
+      flex-wrap:wrap;
+      gap:40px;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .about img{
+      width:350px;
+      border-radius:25px;
+      box-shadow:0 0 30px rgba(0,247,255,0.5);
+    }
+
+    .about-text{
+      max-width:600px;
+    }
+
+    .about-text h2{
+      font-size:45px;
+      margin-bottom:20px;
+      color:#00f7ff;
+    }
+
+    .about-text p{
+      color:#ddd;
+      line-height:1.9;
+      font-size:18px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      color:#ccc;
+      margin-bottom:25px;
+      font-size:18px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#080808;
+      color:#888;
+      border-top:1px solid rgba(255,255,255,0.1);
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:42px;
+      }
+
+      nav ul{
+        gap:15px;
+      }
+
+      nav{
+        padding:20px 5%;
+      }
+
+      .title{
+        font-size:35px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+    <div class="logo">GURAIN</div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Build Your <span>Digital Empire</span></h1>
+
+      <p>
+        Premium futuristic website design with modern animations,
+        luxury UI and professional look.
+        Fast. Responsive. Powerful.
+      </p>
+
+      <a href="#services" class="btn">Explore More</a>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <h2 class="title">My Services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>
+          Modern premium websites with smooth design,
+          mobile optimization and stunning layouts.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Branding</h3>
+        <p>
+          Build your online identity with unique visuals
+          and professional style.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Performance</h3>
+        <p>
+          Lightning fast websites optimized for speed,
+          SEO and user experience.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="about">
+
+      <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1974&auto=format&fit=crop">
+
+      <div class="about-text">
+
+        <h2>About Me</h2>
+
+        <p>
+          I create next generation websites with luxury design,
+          premium user interface and smooth modern experience.
+          This website is fully responsive and looks amazing
+          on mobile and desktop devices.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact">
+
+    <h2 class="title">Contact Me</h2>
+
+    <p>Email: yourmail@gmail.com</p>
+
+    <a href="#" class="btn">Message Now</a>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Gurain Singh. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
+
